@@ -5,3 +5,10 @@
 .text-divider {
   width: 5rem;
 }
+
+@media screen and (min-width: 600px) {
+  .form-container,
+  .footer-container {
+    width: 50%;
+  }
+}
