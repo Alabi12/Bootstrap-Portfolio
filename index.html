@@ -1,12 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My First Bootstrap Page</title>
-  </head>
-  <body>
-    
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>My First Bootstrap Page</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-dark" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div
+    class="container-fluid p-5 bg-dark text-white text-center hero-container d-flex flex-column align-items-center justify-content-center">
+    <h1 class="display-3">Welcome to my portfolio website!</h1>
+    <hr class="border border-primary border-3 opacity-75 text-divider" />
+    <p class="lead">
+      We develop all types of websites using amazing frameworks like
+      Bootstrap.
+    </p>
+    <button type="button" class="btn btn-primary mt-1">Reach out</button>
+  </div>
+  <div class="container mt-5 mb-5 ">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/img1.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Web Development</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./img/img2.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Project Management</h5>
+            <p class="card-text">This is a short card.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./img/img3.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Software Upgrade</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./img/img4.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Mobile Apps Development</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./img/img5.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Web Apps Development</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./img/img6.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">System Maintenance </h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid pt-5 pb-5 bg-primary">
+
+    <div class="container form-container">
+      <h2 class="text-white display-4 font-weight-bold">Get in touch with us!</h2>
+      <div class="mb-3">
+        <label for="fullname" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="fullname" placeholder="John Doe">
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="johndoe@gmail.com">
+      </div>
+      <div class="mb-3">
+        <label for="textarea" class="form-label">Example textarea</label>
+        <textarea class="form-control" id="textarea" rows="3"></textarea>
+      </div>
+      <button type="button" class="btn btn-dark">Get in touch</button>
+    </div>
+  </div>
+  <footer class="container-fluid pt-3 pb-3 bg-dark">
+    <div class="container text-white footer-container">
+      Built with love ♥ - All Rights Reserved @2022!
+    </div>
+  </footer>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
 </html>
