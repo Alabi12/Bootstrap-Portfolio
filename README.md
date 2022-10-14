@@ -8,7 +8,7 @@
 
 ## Live Demo
 
-View live website [demo here >>](https://serengia.github.io/Bootstrap-Portfolio/)
+View live website [demo here... >>](https://serengia.github.io/Bootstrap-Portfolio/)
 
 ## Getting Started
 
